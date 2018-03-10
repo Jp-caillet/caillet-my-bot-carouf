@@ -44,7 +44,6 @@ module.exports = class Botcarefour {
       //console.log(result);
       this.setJson(result);
       sync = false;
-      
     });
     while (sync) {
       require('deasync').sleep(100);
@@ -67,6 +66,5 @@ module.exports = class Botcarefour {
   getLatitude (i) {
     return this.json.list[i].latitude;
   }
-}
-
+};
 
