@@ -25,7 +25,7 @@ module.exports = class Botcarefour {
    }
     };
 
-    request(options, function requeste (error, response, body) {
+    request(options, (error, response, body) => {
       if (error) {
         return console.error('Failed: %s', error.message);
       }
